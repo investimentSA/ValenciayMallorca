@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJLCLVDR0X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-KJLCLVDR0X');
-    </script>
-    <!-- Google Site Verification -->
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJLCLVDR0X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KJLCLVDR0X');
+</script>
     <meta name="google-site-verification" content="hjWAVJxznI_b9KQbsJdiNS3EaKxkSX0nW79v84vNizo" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sigue en directo el partido Mallorca vs Valencia. Mira el emocionante partido de LaLiga gratis online el 29 de noviembre de 2024 completando una oferta.">
-    <meta name="keywords" content="Mallorca vs Valencia, partido en vivo, LaLiga online gratis, streaming en directo, fútbol España">
+    <meta name="keywords" content="Mallorca vs Valencia, partido en vivo Mallorca Valencia, LaLiga online gratis, ver partido Mallorca Valencia en vivo, streaming Mallorca Valencia, LaLiga EA Sports en directo, fútbol online España, ver LaLiga gratis">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Mallorca vs Valencia - Ver LaLiga Online Gratis" />
     <meta property="og:description" content="Disfruta del partido Mallorca vs Valencia en vivo online. Completa una oferta rápida y accede al streaming gratis." />
@@ -23,9 +23,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <title>Mallorca vs Valencia | Ver LaLiga Online Gratis</title>
     <link rel="icon" href="https://image.discovery.indazn.com/ca/v2/ca/image?id=95w2ncv4kuy41dmcpaq4i32l5_image-header_pEs_1696698348000" type="image/png">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,7 +33,9 @@
         }
         .hero {
             position: relative;
-            background: url('https://image.discovery.indazn.com/ca/v2/ca/image?id=95w2ncv4kuy41dmcpaq4i32l5_image-header_pEs_1696698348000') center/cover no-repeat;
+            background-image: url('https://image.discovery.indazn.com/ca/v2/ca/image?id=95w2ncv4kuy41dmcpaq4i32l5_image-header_pEs_1696698348000');
+            background-size: cover;
+            background-position: center;
             color: white;
             padding: 100px 20px;
             text-align: center;
@@ -41,71 +43,141 @@
         .hero::before {
             content: '';
             position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+            z-index: 1;
         }
         .hero h1, .hero h3, .hero p {
             position: relative;
             z-index: 2;
         }
+        .cta {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
         .video-fake {
+            position: relative;
             width: 100%;
             max-width: 640px;
             height: 360px;
             margin: 30px auto;
-            background: black;
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 8px;
-            overflow: hidden;
             cursor: pointer;
-            position: relative;
+            overflow: hidden;
         }
         .video-fake::before {
             content: "";
             position: absolute;
-            inset: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: rgba(0, 0, 0, 0.3);
         }
         .video-fake .play-btn {
+            position: relative;
             z-index: 2;
             font-size: 3rem;
             color: white;
         }
-        footer {
-            background-color: #343a40;
+        .video-fake:hover::before {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .btn-custom {
+            background-color: #ff4500;
             color: white;
-            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .btn-custom:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+
+        /* Estilo para resaltar instrucciones */
+        .instructions {
+            background-color: #f9f9f9;
+            border: 2px solid #ffc107;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 1.2rem;
             text-align: center;
+            color: #343a40;
+        }
+        .instructions h4 {
+            font-size: 1.4rem;
+            color: #007bff;
+        }
+        .instructions ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
+    <!-- Encabezado principal -->
     <header class="hero">
         <h1>Mallorca vs Valencia</h1>
         <h3>Disfruta del partido en vivo este 29 de noviembre de 2024</h3>
         <p>¡Completa una oferta rápida y accede al streaming gratis!</p>
     </header>
 
-    <main class="container my-5">
+    <!-- Contenido principal -->
+    <div class="container my-5">
         <section id="partido">
-            <h2>¿Estás listo para el gran partido?</h2>
-            <p>El esperado encuentro entre el <strong>RCD Mallorca</strong> y el <strong>Valencia CF</strong> en la jornada 15 de <strong>LaLiga EA Sports</strong> será este <strong>viernes 29 de noviembre de 2024</strong>. ¡No te lo pierdas!</p>
+            <h2 class="text-center">¿Estás listo para el gran partido?</h2>
+            <p>El esperado encuentro entre el <strong>RCD Mallorca</strong> y el <strong>Valencia CF</strong> en la jornada 15 de <strong>LaLiga EA Sports</strong> será este <strong>viernes 29 de noviembre de 2024</strong> a las 21:00 horas en el estadio Son Moix. No te pierdas la oportunidad de ver este emocionante partido en vivo.</p>
         </section>
 
+        <!-- Instrucciones claras -->
+        <div class="instructions">
+            <h4>Instrucciones para ver el partido:</h4>
+            <ul>
+                <li>Haz clic en el video de abajo para ser redirigido al sitio de la oferta.</li>
+                <li>Completa una oferta rápida que aparecerá en la nueva página.</li>
+                <li>Una vez completada la oferta, podrás acceder al streaming del partido en vivo.</li>
+                <li>Recuerda que solo es necesario completar una oferta para desbloquear el contenido.</li>
+            </ul>
+        </div>
+
+        <!-- Cuadro de "video falso" -->
         <div class="video-fake" onclick="window.location.href='https://superfolder.net/pauldev'">
             <i class="bi bi-play-circle-fill play-btn"></i>
         </div>
 
+        <!-- Llamado a la acción -->
         <div class="cta text-center my-4">
             <h3>Ver el Partido Gratis</h3>
-            <a href="https://superfolder.net/pauldev" class="btn btn-primary btn-lg">Acceder Ahora</a>
+            <p>¡Haz clic en el botón de reproducción o en el enlace y completa una oferta rápida para desbloquear el streaming en vivo!</p>
+            <a href="https://superfolder.net/pauldev" class="btn btn-custom btn-lg">Acceder Ahora</a>
         </div>
-    </main>
+    </div>
 
-    <footer>
+    <!-- Optimización SEO adicional -->
+    <footer class="text-center py-4">
         <p>&copy; 2024 - Mallorca vs Valencia - Streaming Gratis de LaLiga EA Sports.</p>
+        <small>Esta página está optimizada para ofrecer el mejor contenido relacionado con el partido <strong>Mallorca vs Valencia</strong>. Toda la información es actualizada y relevante para los aficionados al fútbol.</small>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
